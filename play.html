@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 20px;
+}
+.image-pair {
+  width: 300px; /* Set a fixed width for the image container */
+  height: 300px; /* Set a fixed height for the image container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  overflow: hidden; /* Ensure images do not overflow outside the container */
+}
+#img1 {
+  width: 100%; /* Make the image fill the container's width */
+  height: 100%; /* Make the image fill the container's height */
+  object-fit: contain; /* Maintain the image's aspect ratio */
+}
+input[type="text"] {
+  padding: 10px;
+  width: 250px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #45a049;
+}
+#feedback {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>WhoDis?</title>
+</head>
+<body>
+  <!-- Nav -->
+  <div class="pill-nav">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a class="active" href="play.html">Play</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Game Container -->
+  <div class="game-container">
+    <h1>Who Dis?</h1>
+    <div class="image-pair">
+      <img id="img1" src="" alt="Image 1" />
+      <img id="img2" src="" alt="Image 2" />
+    </div>
+    <input type="text" id="user-answer" placeholder="Type your answer..." />
+    <button onclick="checkAnswer()">Submit</button>
+    <p id="feedback"></p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>WhoDis? Copyright © 2025 All Rights Reserved. | Coded By The Prodigy</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

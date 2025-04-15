@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .card-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap; /* allows wrapping on small screens */
+      padding: 20px;
+    }
+
+    .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 300px; /* Explicit fixed width */
+  text-align: center;
+  font-family: arial;
+  background-color: teal;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+    .title {
+      color: white;
+      font-size: 18px;
+    }
+
+    button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 22px;
+      color: black;
+    }
+
+    button:hover, a:hover {
+      opacity: 0.7;
+    }
+  .about {
+    font-size: 26px;
+    background-color: black;
+  }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>WhoDis?</title>
+</head>
+<body>
+  <!-- Nav -->
+  <div class="pill-nav">
+    <a href="home.html">Home</a>
+    <a class="active" href="about.html">About</a>
+    <a href="play.html">Play</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Text -->
+  <h1 style="text-align: center; background-color: black;">About Us:</h1>
+  <h2 style="text-align: center; background-color: black;">Meet The Team:</h2>
+  <p class="about">WhoDis? is a fun, quiz game where your knowledge of internet culture, obscure references, and unforgettable (or completely forgettable) characters is put to the test.
+    From iconic internet sounds like Tung Tung Tung Sahur to Trippi Troppi — this quiz is all about testing how deep your brainrot truly goes. It’s weird, it’s funny, and it might just call you out a little.
+    
+    Built for the chronically online and the casually curious, WhoDis? is your new favorite way to waste five minutes and leave wondering, “Wait… why do I know this?".</p>
+
+  <!-- Meet The Team -->
+  <div class="card-container">
+    <div class="card">
+      <img src="Prodigy.png" alt="Prodigy" style="width:100%">
+      <h1>The Prodigy</h1>
+      <p class="title">Title: Coder & Owner</p>
+      <p><button onclick="window.location.href='contact.html'">Contact</button></p>
+    </div>
+    <div class="card">
+      <img src="Zeph.png" alt="33rlty" style="width:100%">
+      <h1>33rlty</h1>
+      <p class="title">Title: Designer & Co-Owner</p>
+      <p><button onclick="window.location.href='contact.html'">Contact</button></p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>WhoDis? Copyright © 2025 All Rights Reserved. | Coded By The Prodigy</p>
+  </div>
+</body>
+</html>

@@ -12,7 +12,7 @@ const images = [
   'Brr Brr Patapim.webp',
   'Cappuccino Assassino.jpg',
   'Lirili Larila.jpg',
-  'Tralalero Tralala.webp',
+  'Trallalero Trallalala.webp',
   'Trippi Troppi.webp',
   'Tung Tung Tung Sahur.jpg'
 ];
@@ -23,7 +23,7 @@ const answers = {
   'Brr Brr Patapim.webp': 'Brr Brr Patapim',
   'Cappuccino Assassino.jpg': 'Cappuccino Assassino',
   'Lirili Larila.jpg': 'Lirili Larila',
-  'Tralalero Tralala.webp': 'Tralalero Tralala',
+  'Trallalero Trallalala.webp': 'Trallalero Trallalala',
   'Trippi Troppi.webp': 'Trippi Troppi',
   'Tung Tung Tung Sahur.jpg': 'Tung Tung Tung Sahur'
 };
